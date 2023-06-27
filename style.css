@@ -85,7 +85,7 @@ ul li a:hover{
     padding-top: 2%;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(229, 8, 8, 0));
-    
+    /* display: flex; */
     
 }
 
@@ -177,20 +177,25 @@ ul li a:hover{
     justify-content: space-around;
 }
 
-.album-col{
-   /* flex-basis: 52%; */
-   /* padding: 30px 20px; */
+/* .album-col{
+   flex-basis: 52%;
+   padding: 30px 20px;
    
    
    
-}
- .album-col:hover {
+} */
+ /* .album-col:hover {
     background: pink;
     opacity: 1;
     box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
 
- }
+ } */
+.imgc:hover{
+    /* background: pink; */
 
+    opacity: 0.2;
+    box-shadow: 3px 3px 3px 3px rgb(233, 233, 233);
+}
 
 
 .album-col img{
@@ -323,12 +328,12 @@ ul li a:hover{
 
 
 @media (max-width:700px){
-    .first{
-        /* width: auto; */
-        
-    }
+
    .first h1{
     font-size: 20px;
+   }
+   .first{
+    width: 43vh;
    }
 
 .container{
@@ -340,12 +345,19 @@ ul li a:hover{
      */
      /* display: flex; */
      flex-direction: column;
+     width: 43vh;
+}
+.album{
+    width: 43vh;
+}
+.members{
+    width: 43vh;
 }
 
 .containers{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .container a{
@@ -366,8 +378,12 @@ ul li a:hover{
     width: 250px;
 
 }
-
+.row{
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
-
+.album-col a{
+    width: 50px;
+}
+}
 
