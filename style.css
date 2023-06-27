@@ -9,7 +9,8 @@
 .header{
     top: auto;
     width:100%;
-    min-height: 100vh;
+    height: 100vh; 
+    /* height: 100%; */
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) ,url("one.jpg");
     background-size: cover;
     background-position:center ;
@@ -77,6 +78,8 @@ ul li a:hover{
 }
 
 .gallery{
+    
+    height: 200%; 
     width: 100%;
     margin: auto;
     padding-top: 2%;
@@ -150,6 +153,8 @@ ul li a:hover{
     
 }
 .album{
+    width:100%;
+    height: 200vh; 
     position: relative;
     align-items: center;
     padding-top: 3%;
@@ -166,14 +171,15 @@ ul li a:hover{
 }
 .containers{
     position: relative;
-    padding: 5% 20%;
+     padding: 5%;
     margin: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .album-col{
    /* flex-basis: 52%; */
-   padding: 30px 20px;
+   /* padding: 30px 20px; */
    
    
    
@@ -190,8 +196,8 @@ ul li a:hover{
 .album-col img{
     display: flex;
     
-    outline: 8px solid pink;
-    background: transparent;
+    outline: 5px solid pink;
+    /* background: transparent; */
     /* width: 30vh; */
     transition: 0.5s;
     /* height: 100%; */
@@ -316,7 +322,11 @@ ul li a:hover{
 
 
 
-@media (max-width:800px){
+@media (max-width:700px){
+    .first{
+        /* width: auto; */
+        
+    }
    .first h1{
     font-size: 20px;
    }
@@ -325,10 +335,17 @@ ul li a:hover{
     padding-left: 5%;
 
 }
+.gallery{
+    /* flex-wrap: wrap;
+     */
+     /* display: flex; */
+     flex-direction: column;
+}
 
 .containers{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container a{
@@ -337,6 +354,17 @@ ul li a:hover{
     padding-left:200px;
     
     
+}
+.rows{
+    margin: auto;
+    padding-left: 2px;
+    /* display: block;
+    flex-direction: column; */
+}
+.card{
+    margin-left: 8%;
+    width: 250px;
+
 }
 
 }
